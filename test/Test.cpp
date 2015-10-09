@@ -6,4 +6,4 @@ void foo()
     printf("Hi\n");
 }
 
-int bar = 4;
+int REPLEX_API bar = 4;

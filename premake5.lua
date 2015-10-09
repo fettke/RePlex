@@ -34,6 +34,7 @@ workspace "RePlex"
 
     project "RePlexTest"
         kind "SharedLib"
+        defines { "REPLEX_EXPORT" }
         files { "test/**.h", "test/**.cpp", "test/pub/*.h" }
 
 
