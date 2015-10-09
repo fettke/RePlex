@@ -32,3 +32,8 @@ workspace "RePlex"
         links { "RePlex" }
         includedirs { "lib/pub" }
 
+    project "RePlexTest"
+        kind "SharedLib"
+        files { "test/**.h", "test/**.cpp", "test/pub/*.h" }
+
+
