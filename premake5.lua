@@ -29,5 +29,5 @@ workspace "RePlex"
         files { "runtime/**.h", "runtime/**.cpp" }
         -- link the RePlexLib library at runtime
         links { "RePlex" }
-        includedirs { "/lib/pub" }
+        includedirs { "lib/pub" }
 
