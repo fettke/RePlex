@@ -20,6 +20,7 @@ workspace "RePlex"
     -- RePlex library
     project "RePlex"
         kind "SharedLib"
+        defines { "REPLEX_EXPORT" }
         -- recursively glob .h and .cpp files in the lib directory
         files { "lib/**.h", "lib/**.cpp" }
 
