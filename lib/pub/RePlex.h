@@ -1,5 +1,6 @@
 #pragma once
 
+#ifdef WIN32
 #include <Windows.h>
 
 #ifdef REPLEX_EXPORT
@@ -7,6 +8,11 @@
 #else
 #define REPLEX_API __declspec(dllimport)
 #endif
+#else //WIN32
+#include <dlfcn.h>
+#define REPLEX_API
+#endif
+
 
 extern "C" {
 	void REPLEX_API *Load(const char* filepath);
