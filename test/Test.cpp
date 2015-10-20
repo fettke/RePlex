@@ -1,9 +1,6 @@
 #include "pub/Test.h"
-#include <cstdio>
-
-void foo()
+int bar = 3;
+int foo(int x)
 {
-    printf("Hi\n");
+  return x + 5;
 }
-
-int bar = 4;
